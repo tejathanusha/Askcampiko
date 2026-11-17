@@ -1,0 +1,373 @@
+/* ============================================================
+   ASK CAMPIKO - APP & LOGIN PAGE STYLES
+   Global Purple Design System Integration
+   ============================================================ */
+
+/* Global Root Container */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* ============================================================
+   LOGIN PAGE CONTAINER
+   ============================================================ */
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background:
+    radial-gradient(
+      circle at 12% 15%,
+      rgba(108, 74, 182, 0.09),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 88% 85%,
+      rgba(139, 109, 204, 0.08),
+      transparent 35%
+    ),
+    var(--background, #faf8ff);
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   LOGIN CARD
+   ============================================================ */
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px 34px;
+  background: var(--surface, #ffffff);
+  border: 1px solid var(--border, #e7e1f0);
+  border-radius: var(--radius-xl, 22px);
+  box-shadow: 0 16px 40px rgba(55, 35, 95, 0.08);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* ============================================================
+   BRAND HEADER
+   ============================================================ */
+
+.login-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 26px;
+}
+
+.login-logo-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary, #6c4ab6) 0%, var(--primary-light, #8b6dcc) 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(108, 74, 182, 0.22);
+  flex-shrink: 0;
+}
+
+.login-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-logo-text h1,
+.login-logo h1 {
+  margin: 0;
+  color: var(--text-primary, #211735);
+  font-size: 21px;
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.login-logo-text p,
+.login-logo p {
+  margin: 3px 0 0;
+  color: var(--text-secondary, #6f6680);
+  font-size: 12.5px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* ============================================================
+   WELCOME / ROLE HEADING
+   ============================================================ */
+
+.login-role-section {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-role-section h2 {
+  margin: 0 0 6px;
+  color: var(--text-primary, #211735);
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.login-role-section > p {
+  margin: 0 0 16px;
+  color: var(--text-secondary, #6f6680);
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ============================================================
+   ROLE SELECTOR PILL TABS
+   ============================================================ */
+
+.role-selector {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+  background: var(--purple-100, #f3efff);
+  border: 1px solid var(--purple-200, #e8defa);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.role-button {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-secondary, #6f6680);
+  font-size: 13px;
+  font-weight: 650;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.role-button:hover {
+  color: var(--primary, #6c4ab6);
+}
+
+.role-button-active {
+  background: var(--surface, #ffffff);
+  color: var(--primary, #6c4ab6);
+  font-weight: 750;
+  box-shadow: 0 2px 8px rgba(108, 74, 182, 0.12);
+}
+
+/* ============================================================
+   LOGIN FORM
+   ============================================================ */
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  color: var(--text-primary, #211735);
+  font-size: 12.5px;
+  line-height: 1.4;
+  font-weight: 650;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  height: 45px;
+  padding: 0 14px;
+  background: #ffffff !important;
+  color: var(--text-primary, #211735) !important;
+  border: 1.5px solid var(--border-dark, #d5cce2);
+  border-radius: 10px;
+  outline: none;
+  font-size: 13.5px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: var(--text-muted, #948ba3);
+}
+
+.form-group input:hover {
+  border-color: var(--primary-light, #8b6dcc);
+}
+
+.form-group input:focus {
+  border-color: var(--primary, #6c4ab6);
+  box-shadow: 0 0 0 3px rgba(108, 74, 182, 0.12);
+}
+
+/* Quick Fill Demo Hint */
+.login-quick-hint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: var(--purple-50, #faf8ff);
+  border: 1px dashed var(--purple-200, #e8defa);
+  border-radius: 8px;
+  font-size: 11.5px;
+  color: var(--text-secondary, #6f6680);
+}
+
+.login-quick-hint span {
+  font-weight: 500;
+}
+
+.login-quick-btn {
+  background: var(--purple-100, #f3efff);
+  border: 1px solid var(--purple-200, #e8defa);
+  border-radius: 6px;
+  padding: 3px 8px;
+  color: var(--primary, #6c4ab6);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.login-quick-btn:hover {
+  background: var(--primary, #6c4ab6);
+  color: #ffffff;
+}
+
+/* ============================================================
+   SUBMIT BUTTON
+   ============================================================ */
+
+.login-button {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 4px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 11px;
+  background: linear-gradient(135deg, var(--primary, #6c4ab6) 0%, var(--primary-dark, #4b2f82) 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 8px 22px rgba(108, 74, 182, 0.24);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.login-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(108, 74, 182, 0.32);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Footer note */
+.login-footer-note {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--text-muted, #948ba3);
+}
+
+/* ============================================================
+   COMING SOON COMPONENT STYLES
+   ============================================================ */
+
+.coming-soon-page {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.coming-soon-page h2 {
+  margin: 0 0 8px;
+  color: var(--text-primary, #211735);
+  font-size: 22px;
+}
+
+.coming-soon-page p {
+  margin: 0;
+  color: var(--text-secondary, #6f6680);
+  font-size: 13px;
+}
+
+/* ============================================================
+   RESPONSIVENESS
+   ============================================================ */
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 20px 14px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+    border-radius: var(--radius-lg, 18px);
+  }
+
+  .login-logo {
+    margin-bottom: 22px;
+  }
+
+  .login-logo-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .login-logo-text h1,
+  .login-logo h1 {
+    font-size: 20px;
+  }
+
+  .login-role-section h2 {
+    font-size: 22px;
+  }
+}
